@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" contetn="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>To Do List</title>
+
+  </head>
+  <body>
+    
+    <div class="head">
+      <div class="nothing status-bar"></div>
+      <div class="time status-bar">
+        <p id="date">00월 00일 0요일</p>
+        <p id="clock">00:00</p>
+      </div>
+      <div class="status-bar">
+
+        <form class="hidden" id="login-form">
+          <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="what is your name?"
+          />
+          <input type="submit" value="Log in" />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+    </div>
+    <div class="body">
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+      <h5>특별한 하루를 만들어보세요</h5>
+      <div class="block-push">
+        <div class="left">
+<figure></figure>
+        </div>
+        <ul class="right">
+          <li class="right-top">
+            <div id="weather-box">
+              <div id="weather-img"></div>
+              <div id="weather-text">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </li>
+          <li class="right-bottom">
+            <div id="todo-list-box">
+              <ul id="todo-list"></ul>
+              <form id="todo-form">
+                <input class="todo-input"
+                  type="text"
+                  placeholder="Write a To Do and Press Enter"
+                  required
+                />
+              </form>
+            </div>
+          </li>
+        </ul>
+          </div>
+      </div>
+    </div>
+    <script src="js/grettings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/img.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
